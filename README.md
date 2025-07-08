@@ -27,8 +27,8 @@ A comprehensive web application that allows users to input any web API and perfo
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
-   cd WebAPIDeepResearchWebSite
+   git clone https://github.com/tonynash/WebApiDeepResearchWebsite_Cursor.git
+   cd WebApiDeepResearchWebsite_Cursor
    ```
 
 2. **Install dependencies**
@@ -87,7 +87,10 @@ src/
 ├── components/
 │   └── ExplorationStep.tsx    # Individual step component
 ├── services/
-│   └── apiService.ts          # API exploration logic
+│   ├── apiService.ts          # API exploration logic
+│   └── webScraper.ts          # Web scraping fallbacks
+├── config/
+│   └── apiConfig.ts           # API configuration
 ├── types/
 │   └── index.ts              # TypeScript type definitions
 ├── App.tsx                   # Main application component
@@ -112,6 +115,15 @@ The project uses:
 - Prettier for code formatting
 - Tailwind CSS for styling
 
+## Real API Integrations
+
+This application includes real API integrations with:
+
+- **MDN Web Docs API** - Fetches actual API documentation
+- **GitHub API** - Searches for real issues and repositories
+- **Web Scraping Fallbacks** - When APIs fail, scrapes public web pages
+- **Mock Data Safety Net** - Ensures the app always works
+
 ## Contributing
 
 1. Fork the repository
@@ -129,4 +141,4 @@ This project is licensed under the MIT License.
 - MDN Web Docs for API documentation
 - GitHub for issue tracking
 - Chromium Bug Portal for browser implementation details
-- Web Platform Incubator Community Group for explainers 
+- Web Platform Incubator Community Group for explainers

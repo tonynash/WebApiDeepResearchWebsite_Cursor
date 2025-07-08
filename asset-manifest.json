@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/WebApiDeepResearchWebsite_Cursor/static/css/main.6c8fcdbd.css",
+    "main.js": "/WebApiDeepResearchWebsite_Cursor/static/js/main.7c14288c.js",
+    "index.html": "/WebApiDeepResearchWebsite_Cursor/index.html",
+    "main.6c8fcdbd.css.map": "/WebApiDeepResearchWebsite_Cursor/static/css/main.6c8fcdbd.css.map",
+    "main.7c14288c.js.map": "/WebApiDeepResearchWebsite_Cursor/static/js/main.7c14288c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6c8fcdbd.css",
+    "static/js/main.7c14288c.js"
+  ]
+}

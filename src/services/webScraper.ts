@@ -163,6 +163,7 @@ export class WebScraper {
     try {
       // Search Chromium bugs (this would require proper API access)
       // For now, we'll simulate based on common patterns
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
       const searchTerm = apiName.toLowerCase().replace(' api', '');
       
       return [

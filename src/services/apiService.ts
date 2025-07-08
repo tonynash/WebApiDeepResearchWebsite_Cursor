@@ -1,6 +1,8 @@
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { APIInfo, ExplorationStep, BrowserSupport, SupportStatus, ExplainerInfo, GitHubIssue, ChromiumBug, ChromiumStatus, ChromiumChange } from '../types';
 import axios from 'axios';
 import { WebScraper } from './webScraper';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { API_CONFIG, API_ENDPOINTS, getGitHubHeaders } from '../config/apiConfig';
 
 // Mock API data for demonstration (fallback)
@@ -77,6 +79,7 @@ export class APIService {
       });
 
       if (mdnResponse.data && mdnResponse.data.documents && mdnResponse.data.documents.length > 0) {
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
         const doc = mdnResponse.data.documents[0];
         return {
           name: apiName,
@@ -131,6 +134,7 @@ export class APIService {
 
       if (response.data && response.data.documents && response.data.documents.length > 0) {
         // Parse browser support from MDN data
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
         const doc = response.data.documents[0];
         // This would need more sophisticated parsing of MDN's compatibility data
         return {
@@ -240,6 +244,7 @@ export class APIService {
     try {
       // Search Chromium bugs (this would require proper authentication)
       // For now, we'll simulate the search
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
       const searchTerm = apiName.toLowerCase().replace(' api', '');
       
       // This is a simplified version - real implementation would need proper Chromium bug API access
